@@ -9,8 +9,8 @@ import Link from './Model/Link.js'
 dotenv.config()
 
 
-import { PostLink } from './controllers/Link.js'
-import { health } from './controllers/health.js'
+import { PostLink , GetRedirectUrl } from './controllers/Link.js'
+import { Health, Error } from './controllers/Health.js'
 
 const app = express()
 app.use(cors())
@@ -27,10 +27,10 @@ const dbconnection = async () => {
 }
 dbconnection();
 
-
-app.get('/health', health)
 app.post("/link", PostLink)
-
+app.get("/:slug",GetRedirectUrl )
+app.get('/health', Health)
+app.get('*', Error)
 
 const PORT = process.env.PORT
 app.listen(PORT, () => {
