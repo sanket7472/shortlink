@@ -5,7 +5,12 @@ import mongoose from 'mongoose'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import Link from './Model/Link.js'
+
 dotenv.config()
+
+
+import { PostLink } from './controllers/Link.js'
+import { health } from './controllers/health.js'
 
 const app = express()
 app.use(cors())
@@ -22,26 +27,10 @@ const dbconnection = async () => {
 }
 dbconnection();
 
-app.get("/health", (req, res) => {
-    res.json({
-        success: true,
-        message: "server is running..."
-    })
-}
-)
 
+app.get('/health', health)
+app.post("/link", PostLink)
 
-app.post("/link", async(req,res)=>{
-    const {target,title,slug} = req.body;
-    const link = new Link({target,title,slug})
-    
-    const savedLink = await link.save();
-    res.json({
-        success:true,
-        data:savedLink,
-        message:"Link saved successfully"
-    })
-})
 
 const PORT = process.env.PORT
 app.listen(PORT, () => {
