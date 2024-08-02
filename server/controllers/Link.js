@@ -1,4 +1,4 @@
-import Link from "../Model/Link.js";
+import Link from './../Model/Link.js'
 
 
 
