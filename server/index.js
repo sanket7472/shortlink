@@ -10,7 +10,7 @@ dotenv.config()
 
 
 import { PostLink , GetRedirectUrl } from './controllers/Link.js'
-import Health  from './controllers/Health.js'
+
 
 const app = express()
 app.use(cors())
@@ -29,7 +29,12 @@ dbconnection();
 
 app.post("/link", PostLink)
 app.get("/:slug",GetRedirectUrl )
-app.get('/health', Health)
+app.get('/health', (req, res) => {
+    res.json({
+        success: true,
+        message: "server is running..."
+    })
+})
 
 
 const PORT = process.env.PORT
