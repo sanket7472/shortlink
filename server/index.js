@@ -10,7 +10,7 @@ dotenv.config()
 
 
 import { PostLink , GetRedirectUrl } from './controllers/Link.js'
-import { Health } from './controllers/Health.js'
+import Health  from './controllers/Health.js'
 
 const app = express()
 app.use(cors())

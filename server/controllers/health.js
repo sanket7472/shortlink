@@ -8,12 +8,11 @@ const Health =  (req, res) => {
     })
 }
 // Page not found
-const Error = ()=>{
-    res.send ('404 Error .....Page not found')
-}
+// const Error = ()=>{
+//     res.send ('404 Error .....Page not found')
+// }
 
 
-export {
-    Health,
-    Error
-}
+export default Health
+
+
