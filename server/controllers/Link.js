@@ -16,18 +16,15 @@ const PostLink = async (req, res) => {
 
 const GetRedirectUrl = async (req, res) => {
     const { slug } = req.params;
-    const link = await Link.findOne({ slug });
-    if (!link) {
+    const link = await Link.findOne({ slug })
+    if(!link) {
         res.json({
             message: "Link Not Found"
-
         })
+    } else {
+        await Link.updateOne({ slug } , { $inc: { views: 1 } })
+        res.redirect(link.target);
     }
-
-    link.views = link.views + 1;
-    await link.save();
-
-    res.redirect(link.target);
 }
 export {
     PostLink,
