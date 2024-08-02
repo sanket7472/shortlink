@@ -30,7 +30,7 @@ dbconnection();
 app.post("/link", PostLink)
 app.get("/:slug",GetRedirectUrl )
 app.get('/health', Health)
-app.get('*', Error)
+
 
 const PORT = process.env.PORT
 app.listen(PORT, () => {
