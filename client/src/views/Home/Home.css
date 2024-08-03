@@ -1,0 +1,11 @@
+.form-control{
+    width:500px ;
+}
+.form-div{
+   width:  600px;
+   background-color: #d1d1e9;
+}
+.btn{
+    background-color: #6246ea;
+    font-weight: 500;
+}
