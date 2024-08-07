@@ -6,13 +6,8 @@ import './Global.css';
 import Home from './views/Home/Home.js';
 import Register from './views/Register/Register.js';
 import Login from './views/Login/Login.js';
-// import Main from './views/Main/Main';
-
 const router = createBrowserRouter([
-  // {
-  //   path : '/main',
-  //   element : <Main/>
-  // },
+ 
   {
     path : '/',
     element : <Home/>
