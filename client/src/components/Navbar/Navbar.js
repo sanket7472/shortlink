@@ -29,7 +29,7 @@ function Navbar() {
                             <a className="nav-link web-direc nav-btn" href="/login">Login</a>
                         </li>
                         <li className="nav-item">
-                        <span className='nav-link logot web-direc nav-btn' onClick={logoutbt}>
+                        <span className='nav-link logot web-direc nav-btn log-out' onClick={logoutbt}>
                             Logout
                         </span>
                         </li>

@@ -10,11 +10,11 @@ function LinkCard({ title, slug, target, views, createdAt }) {
     return (
         <div className='link-card-container'>
             <h3 className='link-card-title'>{title || 'No Title'}</h3>
-                <a href={shortURL} target='_blank' className='link-card-target'>
+                <a href={shortURL} target='_blank' className='link-card-target text-primary'>
                     <img src={shortImg} alt='ShortURL'className='link-card-img'/>{shortURL}
                 </a>
                 <a href={target} target='_blank' className='link-card-target'>
-                   <img src={targetImg} alt='TargetURL' className='link-card-img'/>{target.substring(0, 50)}{target.length > 50 ? "..." : null}
+                   <img src={targetImg} alt='TargetURL' className='link-card-img'/>{target.substring(0, 40)}{target.length > 50 ? "..." : null}
                 </a>
          
             <span className='link-card-view'>

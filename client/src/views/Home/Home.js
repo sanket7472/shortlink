@@ -75,6 +75,7 @@ function Home() {
             <div className='link-main-container'>
                 <div>
                     <form className='link-form'>
+                        <h2 className='heading-style heading'>Generate New Link</h2>
                         <input
                             type='text'
                             placeholder='Enter Title '
@@ -108,7 +109,7 @@ function Home() {
                     </form>
                 </div>
                 <div className='alllinks-container'>
-                    <h2 style={{ textAlign: 'center' }}>My Links</h2>
+                    <h2 className='heading-style heading link-heading'>My Links</h2>
                     {
                         userLink.map((link, i) => {
                             const { title, slug, target, views, createdAt } = link;
