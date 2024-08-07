@@ -55,3 +55,46 @@ height: 70px;
     margin-top: 15px;
 }
 
+@media (max-width:600px) {
+    .link-form{
+        visibility: hidden;
+        display: none;
+    }
+    .alllinks-container{
+        width: 100%;
+    }
+ 
+}
+@media (min-width:601px) and (max-width:768px) {
+
+    .link-form{
+        visibility: hidden;
+        display: none;
+    }
+    .alllinks-container{
+        width: 100%;
+    }
+}
+@media (min-width:769px) and (max-width:1000px) {
+    .link-form{
+      width: 400px;
+    }
+    .alllinks-container{
+        width: 400px;
+    }
+    .link-main-container{
+        justify-content: space-evenly;
+    }
+  
+}
+@media (min-width:1001px)  and (max-width:1200px){
+    .link-form{
+       margin-right: 100px;
+      }
+      .link-main-container{
+        justify-content: space-evenly;
+    }
+}
+
+
+

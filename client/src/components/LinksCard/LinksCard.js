@@ -14,7 +14,7 @@ function LinkCard({ title, slug, target, views, createdAt }) {
                     <img src={shortImg} alt='ShortURL'className='link-card-img'/>{shortURL}
                 </a>
                 <a href={target} target='_blank' className='link-card-target'>
-                   <img src={targetImg} alt='TargetURL' className='link-card-img'/>{target.substring(0, 40)}{target.length > 50 ? "..." : null}
+                   <img src={targetImg} alt='TargetURL' className='link-card-img'/>{target.substring(0, 40)}{target.length > 40 ? "..." : null}
                 </a>
          
             <span className='link-card-view'>

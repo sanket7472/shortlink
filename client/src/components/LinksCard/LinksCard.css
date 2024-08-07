@@ -35,3 +35,24 @@
     bottom: 0;
     right: 18px;
 }
+@media (max-width:600px) {
+    .link-card-view-text{
+        display: none;
+        visibility: hidden;
+    }
+   
+}
+@media (min-width:601px) and (max-width:768px) {
+    .link-card-view-text{
+        display: none;
+        visibility: hidden;
+    }
+}
+@media (min-width:769px) and (max-width:1000px) {
+    .link-card-view-text{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
