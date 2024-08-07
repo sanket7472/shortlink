@@ -4,7 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config();
 
-import { postLink, getRedirected , getAllLinks} from './controllers/link.js';
+import { postLink , getRedirected , getAllLinks } from './controllers/link.js';
 import { PostRegister,postLogin } from './controllers/user.js';
 
 
