@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import toast, { Toaster } from 'react-hot-toast'
-
 import './Register.css'
 import registerlogo from './register.png'
 import Navbar from './../../components/Navbar/Navbar.js'

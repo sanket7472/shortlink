@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import toast, { Toaster } from 'react-hot-toast'
 import Footer from '../../components/Footer/Footer.js'
-
 import './Home.css'
 import LinkCard from './../../components/LinksCard/LinksCard.js'
 import Navbar from '../../components/Navbar/Navbar.js'
@@ -64,7 +63,13 @@ function Home() {
     useEffect(() => {
         loadLinks();
     }, [user])
-
+    const deleteLink = async (id) => {
+        id = userLink._id
+        const response = await axios.delete(`${process.env.REACT_APP_API_URL}/link/${id}`);
+        loadLinks();
+    }
+ 
+    
     return (
         <div>
             <Navbar />
@@ -130,3 +135,4 @@ function Home() {
 }
 
 export default Home
+

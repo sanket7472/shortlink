@@ -1,6 +1,7 @@
 import React from 'react'
 import toast,{Toaster} from 'react-hot-toast'
 import './Navbar.css'
+
 import logo from './link.png'
 
 function Navbar() {
@@ -23,7 +24,7 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav nav-sec">
                         <li className="nav-item">
-                            <a className="nav-link web-direc nav-btn" href="/main">Home</a>
+                            <a className="nav-link web-direc nav-btn" href="/">Home</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link web-direc nav-btn" href="/login">Login</a>

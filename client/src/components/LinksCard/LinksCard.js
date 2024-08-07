@@ -24,6 +24,7 @@ function LinkCard({ title, slug, target, views, createdAt }) {
                 {views > 0 ? `${views} people visited this URL` : 'Share URL to get view count'}
                 </span>
             <span className='link-card-date'>{new Date(createdAt).toLocaleString()}</span>
+            <button type='button' className='btn'>Update</button> <button type='button' className='btn' >Delete</button>
         </div>
     )
 }

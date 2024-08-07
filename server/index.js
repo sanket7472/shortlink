@@ -4,7 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config();
 
-import { postLink , getRedirected , getAllLinks } from './controllers/link.js';
+import { postLink , getRedirected , getAllLinks , deleteLink } from './controllers/link.js';
 import { PostRegister,postLogin } from './controllers/user.js';
 
 
@@ -31,6 +31,8 @@ app.get("/alllink", getAllLinks);
 app.post("/link", postLink);
 
 app.get("/:slug", getRedirected);
+
+app.delete("/link/:id", deleteLink);
 
 app.post("/signup", PostRegister);
 

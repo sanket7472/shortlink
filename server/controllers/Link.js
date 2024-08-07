@@ -5,7 +5,6 @@ import Link from "../models/Link.js";
 const getAllLinks = async (req, res) => {
     const {userId} = req.query
     console.log('userId', userId)
-    
     const user = await User.findById(userId);
 
     if (!user) {
@@ -66,8 +65,18 @@ const getRedirected = async (req, res) => {
 
     res.redirect(link.target)
 }
+const deleteLink = async (req, res) => {
+    const { id } = req.params;
+    await Link.findByIdAndDelete(id)
+    res.json({
+        success: true,
+        message: "Link deleted successfully"
+    })
+}
 
 export { 
     postLink, 
     getRedirected,
-    getAllLinks };
+    getAllLinks,
+    deleteLink
+};
