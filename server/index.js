@@ -23,7 +23,7 @@ connectDB();
 app.get("/health", (req,res)=>{
     res.json({
         success : true,
-        message : "FTP Link Web"
+        message : "server is running"
     })
 })
 app.get("/alllink", getAllLinks);

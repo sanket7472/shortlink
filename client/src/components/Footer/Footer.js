@@ -29,7 +29,6 @@ function Navbar() {
                                 <li><a href="terms-of-service" className='text-decoration-none'>Terms of Service</a></li>
                                 <li><a href="privacy-policy" className='text-decoration-none'>Privacy Policy</a></li>
                                 <li><a href="faqs" className='text-decoration-none'>FAQs</a></li>
-                                <li><a href="help-center" className='text-decoration-none'>Help Center</a></li>
                                 <li><a href="contact-us" className='text-decoration-none'>Contact Us</a></li>
                             </ul>
                         </div>
