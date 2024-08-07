@@ -64,7 +64,7 @@ function Home() {
         loadLinks();
     }, [user])
     const deleteLink = async (id) => {
-        id = userLink._id
+    cd     id = userLink._id
         const response = await axios.delete(`${process.env.REACT_APP_API_URL}/link/${id}`);
         loadLinks();
     }
