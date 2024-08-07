@@ -67,4 +67,7 @@ const getRedirected = async (req, res) => {
     res.redirect(link.target)
 }
 
-export { postLink, getRedirected, getAllLinks };
+export { 
+    postLink, 
+    getRedirected,
+    getAllLinks };
