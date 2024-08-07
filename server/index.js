@@ -4,8 +4,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config();
 
-import { postLink , getRedirected , getAllLinks , deleteLink } from './controllers/link.js';
-import { PostRegister,postLogin } from './controllers/user.js';
+import { postLink , getRedirected , getAllLinks , deleteLink } from './controllers1/link1.js';
+import { PostRegister,postLogin } from './controllers1/user.js';
 
 
 const app = express();
