@@ -32,8 +32,23 @@
 .log-out-hover{
     background-color: #db4646;
 }
+.ham{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    display: none;
+    visibility: hidden;
 
-@media (max-width:620px) {
+}
+
+@media (max-width:600px) {
+    .ham{
+      
+        visibility: visible;
+    }
   
 }
 
